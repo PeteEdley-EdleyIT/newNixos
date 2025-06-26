@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750953069,
+        "narHash": "sha256-KBCLwTBn7G22rSrZ+Gnvksu/wRT4V1uUZL+EM1AWKN4=",
+        "ref": "refs/heads/main",
+        "rev": "9edc24b0a5fee4eb200053c170d6afd58636c740",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://github.com/PeteEdley-EdleyIT/dotfiles.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/PeteEdley-EdleyIT/dotfiles.git"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -54,6 +70,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable"
