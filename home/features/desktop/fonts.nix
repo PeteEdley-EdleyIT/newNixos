@@ -14,7 +14,7 @@ with lib; let
         fira-code
         fira-code-symbols
         fira-code-nerdfont
-        font-manage
+        font-manager
         font-awesome_5
         noto-fonts
       ];
