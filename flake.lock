@@ -3,11 +3,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1750953069,
-        "narHash": "sha256-KBCLwTBn7G22rSrZ+Gnvksu/wRT4V1uUZL+EM1AWKN4=",
+        "lastModified": 1750953914,
+        "narHash": "sha256-5RTVAF1MA8E9WyD/LdBVllkMKqDDrravuqW4NT3mSiM=",
         "ref": "refs/heads/main",
-        "rev": "9edc24b0a5fee4eb200053c170d6afd58636c740",
-        "revCount": 1,
+        "rev": "e007b826fdc67130650372aa811808edd6e213b0",
+        "revCount": 2,
         "type": "git",
         "url": "https://github.com/PeteEdley-EdleyIT/dotfiles.git"
       },
@@ -54,11 +54,11 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1750622754,
-        "narHash": "sha256-kMhs+YzV4vPGfuTpD3mwzibWUE6jotw5Al2wczI0Pv8=",
+        "lastModified": 1750838302,
+        "narHash": "sha256-aVkL3/yu50oQzi2YuKo0ceiCypVZpZXYd2P2p1FMJM4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c7ab75210cb8cb16ddd8f290755d9558edde7ee1",
+        "rev": "7284e2decc982b81a296ab35aa46e804baaa1cfe",
         "type": "github"
       },
       "original": {
