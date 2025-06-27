@@ -18,13 +18,24 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
 
+    disko = {
+      url ="github:nix-community/disko";
+      inputs.nixpkgs.follows ="nixpkgs";
+    };
+
     dotfiles = {
       url = "git+https://github.com/PeteEdley-EdleyIT/dotfiles.git";
       flake = false;
     };
   };
 
-  outputs = { self, dotfiles, home-manager, nixpkgs, ... }@inputs:
+  outputs = { 
+    self, 
+    disko,
+    dotfiles, 
+    home-manager, 
+    nixpkgs, 
+    ... }@inputs:
     let
       inherit (self) outputs;
       systems = [
@@ -42,7 +53,10 @@
       nixosConfigurations = {
         nixos-vm = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
-          modules = [ ./hosts/nixos-vm ];
+          modules = [ 
+            ./hosts/nixos-vm
+            inputs.disko.nixosModules.disko
+          ];
         };
       };
       homeConfigurations = {
