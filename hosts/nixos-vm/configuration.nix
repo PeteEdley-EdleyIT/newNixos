@@ -12,7 +12,7 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot = true;
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos-vm"; # Define your hostname.
